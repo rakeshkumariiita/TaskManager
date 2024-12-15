@@ -1,0 +1,15 @@
+<% content_for :title, "New task" %>
+
+<h1>New task</h1>
+
+<%= render "form", task: @task %>
+
+<br>
+
+<div>
+  <%= link_to "Back to tasks", tasks_path %>
+</div>
+
+<div>
+<%= button_to "Sign Out", {:controller=> "sessions", :action=> "destroy"}, :method => :delete %>
+</div>
