@@ -13,19 +13,22 @@ Specifications
 * Database : Postgres 16(Make sure to change peer to md5 in hba config of postgres)
 Make specific user and add those username/password in database.yml
 
-Setup Process :
-Install ruby, rails and postgres in linux enviroment or mac or windows(powershell wsl)
-run following command after pulling the repo from github and setting up postgres
-bundle install
-Make changes to database.yml(update username password based on postgres setup)
-rake db:create   // It will create the database
-rake db:migrate  // It will create the tables in dababase 
-rake db:seed     // It will fill the seed data in tables
-rails console    // It will open console then add new user as per below commands(Add User)
-rails s          // It will run the server at 3000 port)
+
+Setup Process : 
+* Install ruby, rails and postgres in linux enviroment or mac or windows(powershell wsl)
+* Run following command after pulling the repo from github and setting up postgres
+* bundle install
+* Make changes to database.yml(update username password based on postgres setup)
+* rake db:create   // It will create the database
+* rake db:migrate  // It will create the tables in dababase 
+* rake db:seed     // It will fill the seed data in tables
+* rails console    // It will open console then add new user as per below commands(Add User)
+* rails s          // It will run the server at 3000 port)
 Open brower and access localhost:3000
 It will prompt for the login screen(email/password)
 Use the same used to create user via console and then the application is your to CRUD Tasks
+
+
 
 * Add a User in User Table via Rails console (Following commands)
 task-manager(dev)> user = User.new(:email_address => "temporary@temp.com")
