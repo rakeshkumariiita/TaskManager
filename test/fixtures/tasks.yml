@@ -1,13 +1,69 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
+task_5:
+  id: 5
+  title: Second Task
+  description: Second Task of work
+  due_date: 2024-12-18
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 12:06:03.919238000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 12:06:03.919238000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 12:06:03.919238000 Z
+    zone: *1
+    time: 2024-12-15 12:06:03.919238000 Z
+  user_id: 1
   status_id: 1
-  due_date: 2024-12-15
 
-two:
-  title: MyString
-  description: MyText
+task_6:
+  id: 6
+  title: Tast no 3
+  description: Here, implemented pagination
+  due_date: 2024-12-18
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 14:45:10.184439000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 14:45:10.184439000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 14:45:10.184439000 Z
+    zone: *1
+    time: 2024-12-15 14:45:10.184439000 Z
+  user_id: 1
   status_id: 1
-  due_date: 2024-12-15
+
+task_4:
+  id: 4
+  title: Second Task
+  description: Added new task for 2nd order to refine the task controller
+  due_date: 2024-12-17
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 11:07:03.198165000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 11:07:03.198165000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 15:13:30.122374000 Z
+    zone: *1
+    time: 2024-12-15 15:13:30.122374000 Z
+  user_id: 1
+  status_id: 4
+
+task_7:
+  id: 7
+  title: Fourth Task
+  description: Added this for next page
+  due_date: 2024-12-18
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 15:14:02.548620000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 15:14:02.548620000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 15:14:02.548620000 Z
+    zone: *1
+    time: 2024-12-15 15:14:02.548620000 Z
+  user_id: 1
+  status_id: 3

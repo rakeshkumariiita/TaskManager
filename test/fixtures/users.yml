@@ -1,9 +1,15 @@
 <% password_digest = BCrypt::Password.create("password") %>
 
-one:
-  email_address: one@example.com
-  password_digest: <%= password_digest %>
-
-two:
-  email_address: two@example.com
-  password_digest: <%= password_digest %>
+user_1:
+  id: 1
+  email_address: rakeshkumar.iiita@gmail.com
+  password_digest: "$2a$12$p7RSoYwumfVQZ6LwNqDiiu9JPgBbkNnZBZ/NXhfMbgGD8o7kTb432"
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:13:59.280273000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 10:13:59.280273000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:13:59.280273000 Z
+    zone: *1
+    time: 2024-12-15 10:13:59.280273000 Z

@@ -1,7 +1,53 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+status_1:
+  id: 1
+  name: New
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.753505000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 10:23:08.753505000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.753505000 Z
+    zone: *1
+    time: 2024-12-15 10:23:08.753505000 Z
 
-two:
-  name: MyString
+status_2:
+  id: 2
+  name: InProgress
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.780108000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 10:23:08.780108000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.780108000 Z
+    zone: *1
+    time: 2024-12-15 10:23:08.780108000 Z
+
+status_3:
+  id: 3
+  name: InReview
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.823304000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 10:23:08.823304000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.823304000 Z
+    zone: *1
+    time: 2024-12-15 10:23:08.823304000 Z
+
+status_4:
+  id: 4
+  name: Completed
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.864550000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: 2024-12-15 10:23:08.864550000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2024-12-15 10:23:08.864550000 Z
+    zone: *1
+    time: 2024-12-15 10:23:08.864550000 Z

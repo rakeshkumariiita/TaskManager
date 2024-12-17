@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
   # GET /tasks or /tasks.json
   def index
-    @tasks = Task.where(user_id: current_user_id)
+    @tasks = Task.where(user_id: current_user_id).includes(:status)
                 .paginate(page: params[:page], per_page: 3)
   end
 
