@@ -15,7 +15,7 @@ class Task < ApplicationRecord
   end
 
   def due_date_change
-    if (self.changes.include? "due_date") && (self.due_date < self.created_at)
+    if (self.changes.include? "due_date") && (self.due_date < (self.created_at || Time.now))
       self.errors.add :due_date, " Can't allow due_date before task creation date"
     end
   end
