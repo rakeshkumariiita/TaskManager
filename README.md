@@ -1,7 +1,8 @@
 # README
 
 Task Manager Application
-Rails Authentication Used for Sign In and Sign Out with session management
+
+* Rails Authentication Used for Sign In and Sign Out with session management
 Task list with pagination with crud operation like create, update, delete
 Validations added for due_date and status change
 Completed task are shown in green-yellow in show page with class css
@@ -12,7 +13,9 @@ Specifications
 * Ruby version : 3.3.6, Rails Version : 8.0.1
 * Database : Postgres 16(Make sure to change peer to md5 in hba config of postgres)
 Make specific user and add those username/password in database.yml
-
+* sudo vim /etc/postgresql/16/main/pg_hba.conf
+Change peer to md5 for the user postgres or user_name
+*  sudo service postgresql restart
 
 Setup Process : 
 * Install ruby, rails and postgres in linux enviroment or mac or windows(powershell wsl)
@@ -42,3 +45,12 @@ Use the same used to create user via console and then the application is your to
   User Create (15.2ms)  INSERT INTO "users" ("email_address", "password_digest", "created_at", "updated_at") VALUES ('temporary@temp.com', '$2a$12$gMKzDVImdSP9HOe2aD42Pe/li3If1iXsuIpaed/uSwEpMHOtnibo2', '2024-12-15 15:39:18.984657', '2024-12-15 15:39:18.984657') RETURNING "id" /*application='TaskManager'*/
   TRANSACTION (2.4ms)  COMMIT /*application='TaskManager'*/
 => true
+
+
+Testing Setup :
+* Build fixtures via rails console
+* Task.all.each{|task| task.dump_fixture}
+* Status.all.each{|status| status.dump_fixture}
+* Load Fixtures in test db :
+* RAILS_ENV=test bin/rails db:fixtures:load
+* rails test  // Skip controller tests for now

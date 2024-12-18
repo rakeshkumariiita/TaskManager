@@ -11,10 +11,10 @@ class TaskTest < ActiveSupport::TestCase
     assert task.save
   end
 
-  test "should fail if saving task with due_date < Today" do
-    task = Task.where("due_date> ?", Time.now.to_date).last
-    task.due_date = Time.now.to_date - 1.days
-    assert_not task.save, task.errors[:status]
+  test "should fail if saving task with due_date < created_at" do
+    task = Task.first
+    task.due_date = task.created_at - 1.days
+    assert_not task.save, task.errors[:due_date]
   end
 
   test "should fail if saving task with status which is prev to current status" do

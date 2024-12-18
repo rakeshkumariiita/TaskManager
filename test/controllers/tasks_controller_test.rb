@@ -2,9 +2,9 @@ require "test_helper"
 
 class TasksControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @task = tasks(:one)
+    @task = tasks(:task_5)
   end
-
+/
   test "should get index" do
     get tasks_url
     assert_response :success
@@ -44,5 +44,5 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to tasks_url
-  end
+  end /
 end
